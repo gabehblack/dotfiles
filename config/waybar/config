@@ -33,15 +33,17 @@
   },
   "network": {
     "format-ethernet": "E",
-    "format-wifi": "W{signalStrength:2}",
+    "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"],
+    "format-wifi": "{icon} &#8239;{signalStrength:2}",
     "format-disconnected": "Disconnected"
   },
   "battery": {
     "interval": 1,
     "full-at": 85,
-    "format-charging": "B{capacity:2}C%",
-    "format-discharging": "B{capacity:2}D",
-    "format": "B{capacity:2}X",
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "format-charging": "{icon} &#8239;{capacity:2}&#8239;&#8239;",
+    "format-discharging": "{icon} &#8239;{capacity:2}&#8239;&#8239;",
+    "format": "B{capacity:2}&#8239;&#8239;",
   },
   "clock": {
     "interval": 1,
