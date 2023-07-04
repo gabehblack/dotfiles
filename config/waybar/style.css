@@ -71,8 +71,12 @@ window > box {
   color: @bright_yellow;
 }
 
+#battery {
+  color: @bright_orange;
+}
+
 #network.disconnected, #network.disabled {
-  background: @bright_red;
+  background: @faded_red;
 }
 
 #clock {

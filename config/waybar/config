@@ -33,7 +33,7 @@
   },
   "network": {
     "format-ethernet": "E",
-    "format-wifi": "W{signalStrengh:2}",
+    "format-wifi": "W{signalStrength:2}",
     "format-disconnected": "Disconnected"
   },
   "battery": {
