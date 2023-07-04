@@ -27,19 +27,22 @@ swaylock
 thunderbird
 libreoffice
 zola
+pamixer
 )
-sudo pacman -S --noconfirm `echo $(echo "${packages[@]}")`
+sudo pacman -S --noconfirm --needed `echo $(echo "${packages[@]}")`
 
-sudo pacman -S --needed git base-devel
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-cd ..
-rm -rf yay
+if ! pacman -Qs yay > /dev/null; then
+  sudo pacman -S --needed git base-devel
+  git clone https://aur.archlinux.org/yay.git
+  cd yay
+  makepkg -si
+  cd ..
+  rm -rf yay
+fi
 
-yay -S --noconfirm powerline-shell batsignal volumectl playerctl brightnessctl avizo
+yay -S --noconfirm --needed powerline-shell batsignal brightnessctl avizo
 
 cp -rsf ~/dotfiles/config/* ~/.config
 cp -sf ~/dotfiles/.bashrc ~
 cp -sf ~/dotfiles/.gitconfig ~
-mkdir ~/dl ~/notes ~/dev ~/wallpaper
+mkdir -p ~/dl ~/notes ~/dev ~/wallpaper
