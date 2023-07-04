@@ -65,6 +65,12 @@ input "1133:16495:Logitech_MX_Ergo" {
   pointer_accel 1
 }
 
+# Framework trackpad
+input "2362:628:PIXA3854:00_093A:0274_Touchpad" {
+  tap enabled
+  pointer_accel -0.05
+}
+
 exec swayidle -w \
   timeout 300 'swaylock -f -c 282828' \
   timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * spms on"' \
@@ -248,6 +254,7 @@ bar swaybar_command waybar
 
 exec_always setxkbmap -option compose:ralt
 exec_always batsignal -b -f 85 -w 20 -c 10 -d 5
+exec_always pkill kanshi; exec kanshi
 # exec_always blueman-applet
 
 input * xkb_options compose:ralt
