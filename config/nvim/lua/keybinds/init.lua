@@ -51,6 +51,11 @@ map('n', '<leader>fg', ':Telescope live_grep<CR>')
 map('n', '<leader>fb', ':Telescope buffers<CR>')
 map('n', '<leader>fh', ':Telescope help_tags<CR>')
 
+map('n', '<leader>nn', ':Noice dismiss<CR>')
+map('n', '<leader>nl', ':Noice last<CR>')
+map('n', '<leader>nh', ':Noice history<CR>')
+map('n', '<leader>ne', ':Noice errors<CR>')
+
 ---- Visual ----
 -- stay in visual mode when indenting
 map('v', '<', '<gv')
