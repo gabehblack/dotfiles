@@ -40,3 +40,5 @@ rm -rf yay
 yay -S --noconfirm powerline-shell
 
 cp -rsf ~/dotfiles/config/* ~/.config
+cp -sf ~/dotfiles/.bashrc ~
+cp -sf ~/dotfiles/.gitconfig ~
