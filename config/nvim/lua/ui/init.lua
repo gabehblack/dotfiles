@@ -1,0 +1,6 @@
+require('ui.lualine')
+require('ui.bufferline')
+require('ui.neotree')
+require('ui.general')
+require('ui.telescope')
+require('ui.noice')
