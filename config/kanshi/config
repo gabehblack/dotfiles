@@ -1,0 +1,26 @@
+profile {
+  output "eDP-1" {
+    mode 2256x1504@59.999Hz
+    pos 3840 656
+  }
+  output "DP-3" {
+    mode 3840x2160@143.999Hz
+    pos 0 0
+    adaptive_sync on
+  }
+}
+
+profile {
+  output "DP-3" {
+    mode 3840x2160@143.999Hz
+    pos 0 0
+    adaptive_sync on
+  }
+}
+
+profile {
+  output "eDP-1" {
+    mode 2256x1504@59.999Hz
+    pos 0 0
+  }
+}
