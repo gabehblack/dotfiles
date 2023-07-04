@@ -28,6 +28,7 @@ thunderbird
 libreoffice
 zola
 pamixer
+kanshi
 )
 sudo pacman -S --noconfirm --needed `echo $(echo "${packages[@]}")`
 
