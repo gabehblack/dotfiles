@@ -37,8 +37,9 @@ makepkg -si
 cd ..
 rm -rf yay
 
-yay -S --noconfirm powerline-shell
+yay -S --noconfirm powerline-shell batsignal volumectl playerctl brightnessctl avizo
 
 cp -rsf ~/dotfiles/config/* ~/.config
 cp -sf ~/dotfiles/.bashrc ~
 cp -sf ~/dotfiles/.gitconfig ~
+mkdir ~/dl ~/notes ~/dev ~/wallpaper
