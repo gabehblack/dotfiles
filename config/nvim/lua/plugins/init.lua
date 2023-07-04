@@ -21,6 +21,7 @@ plugins = {
   "lewis6991/gitsigns.nvim",
   { "ellisonleao/gruvbox.nvim", priority = 1000 },
   'numToStr/Comment.nvim',
+  "braxtons12/blame_line.nvim",
   'nvim-treesitter/nvim-treesitter',
   {
     "folke/noice.nvim",
