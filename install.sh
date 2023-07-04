@@ -42,7 +42,7 @@ fi
 
 yay -S --noconfirm --needed powerline-shell batsignal brightnessctl avizo
 
-cp -rsf ~/dotfiles/config/* ~/.config
-cp -sf ~/dotfiles/.bashrc ~
-cp -sf ~/dotfiles/.gitconfig ~
+sudo cp -rsf ~/dotfiles/config/* ~/.config
+sudo cp -sf ~/dotfiles/.bashrc ~
+sudo cp -sf ~/dotfiles/.gitconfig ~
 mkdir -p ~/dl ~/notes ~/dev ~/wallpaper
