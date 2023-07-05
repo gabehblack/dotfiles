@@ -33,6 +33,9 @@ o.cmdheight = 0
 -- wrap
 o.wrap = true
 
+-- line length indicator
+vim.opt.colorcolumn = "80"
+
 -- whitespace
 o.list = true
 o.listchars = "eol:¬,trail:·,nbsp:◇,tab:→ ,extends:▸,precedes:◂"
