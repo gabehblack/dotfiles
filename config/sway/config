@@ -261,7 +261,7 @@ bindsym $mod+r mode "resize"
 bar swaybar_command waybar
 
 exec_always setxkbmap -option compose:ralt
-exec batsignal -b -f 85 -w 20 -c 10 -d 5
+exec batsignal -b -w 20 -c 10 -d 5
 exec_always 'pkill kanshi; exec kanshi'
 # exec_always blueman-applet
 
