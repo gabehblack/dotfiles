@@ -21,6 +21,8 @@ alias dcur='rm -f ./tmp/pids/server.pid; docker compose up rails'
 alias dcrp='docker compose run -T -u 1000:1000 --rm runner bundle exec pronto run --staged'
 alias dcrs='docker compose run --rm runner bundle exec rspec'
 alias dcus='docker compose run --rm runner bundle exec sidekiq'
+alias hrc='heroku run rails c --remote production'
+
 function _update_ps1() {
     PS1=$(powerline-shell $?)
 }
