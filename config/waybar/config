@@ -43,7 +43,7 @@
     "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
     "format-charging": "{icon} &#8239;{capacity:2}&#8239;&#8239;",
     "format-discharging": "{icon} &#8239;{capacity:2}&#8239;&#8239;",
-    "format": "B{capacity:2}&#8239;&#8239;",
+    "format": "{icon} &#8239;{capacity:2}&#8239;&#8239;",
   },
   "clock": {
     "interval": 1,
