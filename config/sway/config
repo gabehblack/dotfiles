@@ -62,19 +62,6 @@ input "1133:16495:Logitech_MX_Ergo" {
   pointer_accel 1
 }
 
-# Framework trackpad
-input "2362:628:PIXA3854:00_093A:0274_Touchpad" {
-  tap enabled
-  pointer_accel -0.05
-}
-
-exec swayidle -w \
-  timeout 300 'swaylock -f -c 282828' \
-  timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-  timeout 900 'systemctl suspend' \
-  before-sleep 'swaylock -f -c 282828'\
-  ;
-
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
 exec /usr/share/sway/scripts/inactive-windows-transparency.py --opacity 0.95
@@ -267,4 +254,7 @@ exec_always 'pkill kanshi; exec kanshi'
 
 input * xkb_options compose:ralt
 
-include /etc/sway/config.d/*
+# include /etc/sway/config.d/*
+
+include "./$(cat /etc/hostname)"
+# include ./steinitz
