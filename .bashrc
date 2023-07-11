@@ -13,6 +13,7 @@ set XDG_CURRENT_DESKTOP=sway
 alias ls='ls --color=auto'
 alias icat='kitty +kitten icat'
 alias grep='grep --color=auto'
+alias beep="echo $'\a'"
 
 alias nv='nvim'
 
