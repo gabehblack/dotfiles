@@ -250,6 +250,7 @@ bar swaybar_command waybar
 exec_always setxkbmap -option compose:ralt
 exec batsignal -b -w 20 -c 10 -d 5
 exec_always 'pkill kanshi; exec kanshi'
+exec mako
 # exec_always blueman-applet
 
 input * xkb_options compose:ralt
