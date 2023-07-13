@@ -29,6 +29,7 @@ libreoffice
 zola
 pamixer
 kanshi
+python-i3ipc
 )
 sudo pacman -S --noconfirm --needed `echo $(echo "${packages[@]}")`
 
