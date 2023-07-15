@@ -9,6 +9,7 @@ export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 export PATH="$PATH:$GEM_HOME/bin"
 
 set XDG_CURRENT_DESKTOP=sway
+set EDITOR=nvim
 
 alias ls='ls --color=auto'
 alias icat='kitty +kitten icat'
