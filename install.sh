@@ -30,6 +30,10 @@ zola
 pamixer
 kanshi
 python-i3ipc
+newsboat
+w3m
+mpv
+yt-dlp
 )
 sudo pacman -S --noconfirm --needed `echo $(echo "${packages[@]}")`
 
