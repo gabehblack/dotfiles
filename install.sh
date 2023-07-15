@@ -47,4 +47,4 @@ yay -S --noconfirm --needed powerline-shell batsignal brightnessctl avizo
 sudo cp -rsf ~/dotfiles/config/* ~/.config
 sudo cp -sf ~/dotfiles/.bashrc ~
 sudo cp -sf ~/dotfiles/.gitconfig ~
-mkdir -p ~/dl ~/notes ~/dev ~/wallpaper
+mkdir -p ~/dl ~/dev ~/wallpaper
