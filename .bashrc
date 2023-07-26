@@ -7,6 +7,7 @@
 
 export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 export PATH="$PATH:$GEM_HOME/bin"
+export PATH="$HOME/.rbenv/shims:$PATH"
 
 set XDG_CURRENT_DESKTOP=sway
 set EDITOR=nvim
