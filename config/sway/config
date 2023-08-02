@@ -254,6 +254,7 @@ exec mako
 # exec_always blueman-applet
 
 input * xkb_options compose:ralt
+input * xkb_options compose:menu
 
 # include /etc/sway/config.d/*
 
