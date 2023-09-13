@@ -258,5 +258,6 @@ input * xkb_options compose:ralt
 
 # include /etc/sway/config.d/*
 
+exec "dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP XDG_SESSION_TYPE; systemctl --user start sway-session.target"
+
 include "./$(cat /etc/hostname)"
-# include ./steinitz
