@@ -17,7 +17,7 @@ plugins = {
   "nvim-lualine/lualine.nvim",
   {'akinsho/bufferline.nvim', version = "*", dependencies = "nvim-tree/nvim-web-devicons"},
   {"nvim-neo-tree/neo-tree.nvim", branch = "v2.x", dependencies = {"nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons", "MunifTanjim/nui.nvim"}},
-  {"nvim-telescope/telescope.nvim", tag = "0.1.1", dependencies = "nvim-lua/plenary.nvim"},
+  {"nvim-telescope/telescope.nvim", tag = "0.1.4", dependencies = "nvim-lua/plenary.nvim"},
   "lewis6991/gitsigns.nvim",
   { "ellisonleao/gruvbox.nvim", priority = 1000 },
   'numToStr/Comment.nvim',
