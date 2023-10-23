@@ -34,6 +34,8 @@ newsboat
 w3m
 mpv
 yt-dlp
+slurp
+grim
 )
 sudo pacman -S --noconfirm --needed `echo $(echo "${packages[@]}")`
 

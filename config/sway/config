@@ -241,6 +241,9 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+bindsym $mod+p exec 'grim -o "$(slurp -o -f \"%o\")"'
+bindsym $mod+Shift+p exec 'grim -g "$(slurp)"'
+
 #
 # Status Bar:
 #
