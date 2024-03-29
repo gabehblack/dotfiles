@@ -17,7 +17,12 @@ vim.cmd 'command! W w'
 vim.cmd 'command! Wa wa'
 vim.cmd 'command! Q q'
 vim.cmd 'command! Qa qa'
-
+--stop accidentally saving file as "'"
+-- vim.cmd "command! W' w"
+-- vim.cmd "command! Wa' wa"
+-- vim.cmd "command! w' w"
+-- vim.cmd "command! wa' wa"
+--
 ---- Normal ----
 -- window navigation
 map('n', '<C-h>', '<C-w>h')
