@@ -50,6 +50,8 @@ fi
 
 yay -S --noconfirm --needed powerline-shell batsignal brightnessctl avizo
 
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+
 sudo cp -rsf ~/dotfiles/config/* ~/.config
 sudo cp -sf ~/dotfiles/.bashrc ~
 sudo cp -sf ~/dotfiles/.gitconfig ~
