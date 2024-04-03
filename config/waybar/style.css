@@ -34,7 +34,7 @@ window > box {
 #workspaces button:hover {
   box-shadow: inherit;
   text-shadow: inherit;
-  background-color: @dark0;
+  background: @dark0;
   border: 1px solid @bright_orange;
 }
 #workspaces button.focused {
@@ -82,4 +82,13 @@ window > box {
 #clock {
   color: @bright_aqua;
   padding-right: 10px;
+}
+
+#tray menu {
+  background: @dark0;
+  border: 1px solid @dark2;
+}
+
+#tray menu menuitem:hover {
+  background: @dark2;
 }
