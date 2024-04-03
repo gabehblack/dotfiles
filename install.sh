@@ -36,6 +36,7 @@ mpv
 yt-dlp
 slurp
 grim
+noto-fonts-emoji
 )
 sudo pacman -S --noconfirm --needed `echo $(echo "${packages[@]}")`
 
