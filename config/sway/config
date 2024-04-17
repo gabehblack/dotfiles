@@ -62,11 +62,23 @@ input "1133:16495:Logitech_MX_Ergo" {
   pointer_accel 1
 }
 
-# You can get the names of your inputs by running: swaymsg -t get_inputs
-# Read `man 5 sway-input` for more information about this section.
-exec /usr/share/sway/scripts/inactive-windows-transparency.py --opacity 0.95
+# exec /usr/share/sway/scripts/inactive-windows-transparency.py --opacity 0.95
 
-default_border none
+default_border pixel 2
+client.focused #4C7899 #285577 #FFFFFF
+
+set $bg #282828
+set $orange #fe8019
+set $yellow #fabd2f
+set $white #fbf1c7
+
+# class                 border  backgr. text    indicator child_border
+client.focused          $orange $orange $white  $yellow   $orange
+client.focused_inactive $bg     $bg     $white  $bg       $bg
+client.unfocused        $bg     $bg     $white  $bg       $bg
+client.urgent           $bg     $bg     $white  $bg       $bg
+client.placeholder      $bg     $bg     $bg     $bg       $bg
+client.background $bg
 
 ### Key bindings
 #
