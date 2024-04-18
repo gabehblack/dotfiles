@@ -1,4 +1,6 @@
 # Framework trackpad
+output eDP-1 resolution 2256x1504 scale 1
+
 input "2362:628:PIXA3854:00_093A:0274_Touchpad" {
   tap enabled
   pointer_accel -0.05
