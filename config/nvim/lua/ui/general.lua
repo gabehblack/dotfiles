@@ -41,4 +41,4 @@ o.list = true
 o.listchars = "eol:¬,trail:·,nbsp:◇,tab:→ ,extends:▸,precedes:◂"
 
 -- mouse
-o.mouse=false
+o.mouse = ""
